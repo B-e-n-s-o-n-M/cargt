@@ -1,0 +1,353 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(0, 0, 0);   
+}
+section{
+    background-image: linear-gradient(to right, rgb(97, 99, 97) ,rgb(169, 169, 169));
+    /*width: 100vw;*/
+}
+.logo{
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 35px;
+}
+#header{
+    display: flex;
+    margin-top: 0px;
+    width: 100%;
+    min-height: 70px;
+    background-color:  rgb(5, 0, 7);
+    
+    position: fixed;
+}
+#navbar{
+    flex: 4;
+    justify-content: center;
+}
+.bg{
+    background-color: white;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    height:100%;
+    padding-left: 40%;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+li a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+nav ul li{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+li a:hover{
+    background-color: rgb(241, 241, 241);   
+    color: rgb(13, 0, 0);
+}
+li a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    padding-top: 25px;  
+}
+.grid{
+    display: grid;
+    
+    margin:0px auto;
+    margin-top: 30px;
+    
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    
+   
+}
+img{
+    
+    max-height: 500px; ;
+    
+   min-width: 900px;
+
+}
+.container{
+    border-bottom:2px solid rgb(0, 0, 0);
+    height: 110vh ;
+    
+}
+#pricing {
+    height: 100vh;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+}
+.product {
+    display: flex;
+    background-color: rgb(0, 17, 78);
+    max-height: 600px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    width: calc(70% / 3);
+    margin: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.product>.inst {
+    background-color: #022d83;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.product h2{
+    font-size: 40px;
+    padding-top: 20px;
+}
+.product>ol li {
+    list-style: none;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.product>button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #ffffff; 
+}
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    justify-self: flex-end;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    position: relative;
+    height: 60px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+span{
+     margin:0px 10px;
+}
+#t3{
+    padding-top: 80px;
+    text-align: center;
+}
+@media (max-width:1200px){
+    #pricing {
+        height:auto;
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .product {
+    display: flex;
+    background-color: rgb(0, 17, 78);
+    max-height: 600px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    width:600px;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    }
+    img{
+        max-width:200px;
+    }
+    .logo{
+        min-width: 250px ;
+        align-self: center;
+    }
+    header{
+        height: 250px;
+    }
+    #t1{
+        margin-top: 200px;
+    }
+    .top-padd{
+        padding-top: 180px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+        padding:0px;
+        
+        width: 100%;
+    }
+    #navbar{
+        flex:3;
+        height: auto;
+        justify-content:center;
+        
+
+    }
+    nav ul{
+        padding-left: 20%;
+    }
+    nav ul li{
+        margin: auto;
+        width: 100%;
+        padding :auto;
+        height: 100%;
+        
+    }
+    li a{
+        padding-top: 20px;
+        text-align: center;
+    }
+   
+}
+@media (max-width:700px){
+    
+    .logo{
+        flex: 2;
+        min-width: 200px ;
+        align-self: center;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        height: 250px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 5;
+        padding:0px;
+        
+        width: 100%;
+    }
+    #navbar{
+        flex:5;
+        height: auto;
+        justify-content:center;
+        
+
+    }
+    li{
+        margin: auto;
+        width: 100%;
+        padding :auto;
+        height: 100%;
+        
+    }
+    li a{
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+}
+   
+#home{
+    padding-top: 80px;
+    max-width: auto;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/024/483/549/small_2x/3d-rendering-sports-car-racing-on-race-track-car-wheel-drifting-generative-ai-free-photo.jpg);
+    background-size: cover;
+}
+#t1{
+    padding-top: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+#t2{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    font-style: italic;
+}
+#para{
+    background-color: rgb(0, 0, 0);
+    color:white;
+     text-align: center;
+     margin: 0px 70px;
+    
+padding: 3px 3px;    
+ border-radius: 5px;
+     font-size: 18px ;
+    
+}
+#desc{
+    
+    padding-top: 30px;
+
+}
+.slideshow {
+    margin: 30px auto;
+    max-width:1200px;
+    height:400px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slideshow 20s infinite;
+}
+
+@keyframes slideshow {
+  0% { background-image: url('https://img.freepik.com/premium-photo/black-sports-car-with-red-rim-black-rim_1301128-581.jpg'); }
+  33% { background-image: url('https://img.freepik.com/premium-photo/fast-gold-car_349893-3306.jpg'); }
+  66% { background-image: url('https://img.freepik.com/premium-photo/blurred-image-diffuse-racing-car-fast-track_564714-7052.jpg?w=2000'); }
+  100% { background-image: url('https://img.freepik.com/premium-photo/stylish-fast-car-automotive-background_946209-4726.jpg'); }
+}
+form{
+    display: inline-block;
+    padding-top: 40px;
+    width: 600px;
+    height:500px;
+    margin: 40px auto;
+    border:1px solid #ddd;
+    background-color: black;
+    color: #ddd;
+    font-size: 25px;
+}
+#formcont{
+    display: flex;
+    justify-content: center;
+}
+.input input{
+    font-size: 20px;
+}
+.input{
+    padding-left: 80px;
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    margin-top: 30px;
+    padding:10px 30px;
+    margin-left: 260px;
+    font-size: 20px;
+}
+form div a{
+    display: inline;
+    margin-left:240px;
+}
